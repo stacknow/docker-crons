@@ -1,0 +1,19 @@
+{
+  "name": "sample-nodejs-cron-app",
+  "version": "1.0.0",
+  "description": "A sample Node.js application with multiple cron tasks.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "task:summary": "node tasks/01-daily-summary.js",
+    "task:cleanup": "node tasks/02-cleanup-logs.js",
+    "task:healthcheck": "node tasks/03-api-health-check.js"
+  },
+  "author": "Genesis Engine",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "express": "^4.19.2"
+  }
+}
